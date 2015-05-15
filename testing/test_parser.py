@@ -1,4 +1,4 @@
-from sgeparse import JobsParser
+from sgeparse.parser import JobsParser
 import pytest
 import datetime
 
