@@ -1,6 +1,3 @@
-from .job import Job
-
-
 class JobsParser(object):
 
     def __init__(self, data):
@@ -12,4 +9,4 @@ class JobsParser(object):
 
     @property
     def jobs(self):
-        return iter([Job()])
+        return iter([{'owner': 'sw'}])

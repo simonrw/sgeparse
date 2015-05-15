@@ -12,4 +12,4 @@ def test_parse_testdata(parser):
 
 
 def test_first_job(parser):
-    assert next(parser.jobs).owner == 'sw'
+    assert next(parser.jobs)['owner'] == 'sw'
