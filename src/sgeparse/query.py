@@ -1,4 +1,5 @@
 from .parser import JobsParser
+import subprocess as sp
 
 
 def get_jobs():
@@ -8,4 +9,5 @@ def get_jobs():
 
 
 def fetch_xml():
-    pass
+    cmd = ['qstat', '-xml']
+    return sp.check_output(cmd)
