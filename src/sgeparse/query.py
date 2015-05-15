@@ -1,5 +1,9 @@
-from .parser import JobsParser
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import subprocess as sp
+
+from .parser import JobsParser
 
 
 def get_jobs():

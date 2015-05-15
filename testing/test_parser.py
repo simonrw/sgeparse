@@ -1,6 +1,10 @@
-from sgeparse.parser import JobsParser
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import pytest
 import datetime
+
+from sgeparse.parser import JobsParser
 
 
 @pytest.fixture
