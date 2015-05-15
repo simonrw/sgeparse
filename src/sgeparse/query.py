@@ -6,8 +6,8 @@ import subprocess as sp
 from .parser import JobsParser
 
 
-def get_jobs():
-    xml_text = fetch_xml()
+def get_jobs(user=None):
+    xml_text = fetch_xml(user=user)
     parser = JobsParser(xml_text)
     return parser.jobs
 
