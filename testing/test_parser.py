@@ -1,10 +1,12 @@
 from sgeparse import JobsParser
 import pytest
+import datetime
 
 
 @pytest.fixture
 def parser(data):
-    return JobsParser(data)
+    with open(data) as infile:
+        return JobsParser(infile.read())
 
 
 def test_parse_testdata(parser):
@@ -12,4 +14,14 @@ def test_parse_testdata(parser):
 
 
 def test_first_job(parser):
-    assert next(parser.jobs)['owner'] == 'sw'
+    assert parser.jobs[0] == {
+        'job_number': 1031650,
+        'priority': 0.60500,
+        'name': 'k2_3b802-20150513',
+        'owner': 'sw',
+        'state': 'r',
+        'start_time': datetime.datetime(2015, 5, 15, 13, 38, 8),
+        'queue': 'parallel',
+        'host': 'ngts08.local',
+        'slots': 12,
+    }
