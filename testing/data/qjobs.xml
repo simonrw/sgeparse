@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="http://arc.liv.ac.uk/repos/darcs/sge/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+    <job_list state="running">
+      <JB_job_number>1031650</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>k2_3b802-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T13:38:08</JAT_start_time>
+      <queue_name>parallel@ngts08.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1031651</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>ng1100805-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T13:38:08</JAT_start_time>
+      <queue_name>parallel@ngts11.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1031652</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>ng2000802-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T13:38:08</JAT_start_time>
+      <queue_name>parallel@ngts10.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1031653</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>ng2000805-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T13:38:08</JAT_start_time>
+      <queue_name>parallel@ngts07.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1031655</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>ng2000806-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T13:48:53</JAT_start_time>
+      <queue_name>parallel@ngts06.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1031656</JB_job_number>
+      <JAT_prio>0.60500</JAT_prio>
+      <JB_name>k2_3b806-20150513</JB_name>
+      <JB_owner>sw</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2015-05-15T14:11:38</JAT_start_time>
+      <queue_name>parallel@ngts05.local</queue_name>
+      <slots>12</slots>
+    </job_list>
+  </queue_info>
+  <job_info>
+  </job_info>
+</job_info>
