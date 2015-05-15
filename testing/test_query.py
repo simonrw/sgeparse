@@ -33,3 +33,9 @@ def test_fetch_xml(Popen, data):
 
     xml = fetch_xml()
     assert 'queue_info' in xml
+
+
+@mock.patch('subprocess.check_output')
+def test_fetch_with_user_arg(check_output):
+    fetch_xml(user='*')
+    check_output.assert_called_once_with(['qstat', '-xml', '-u', '*'])

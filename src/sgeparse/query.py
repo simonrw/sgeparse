@@ -12,6 +12,8 @@ def get_jobs():
     return parser.jobs
 
 
-def fetch_xml():
+def fetch_xml(user=None):
     cmd = ['qstat', '-xml']
-    return sp.check_output(cmd)
+    if user is not None:
+        cmd.extend(['-u', user])
+    return sp.check_output(list(map(str, cmd)))
