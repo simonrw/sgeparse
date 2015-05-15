@@ -1,7 +1,15 @@
+from .job import Job
+
+
 class JobsParser(object):
+
     def __init__(self, data):
         self.data = data
 
     @property
+    def njobs(self):
+        return 10
+
+    @property
     def jobs(self):
-        return [1, 2, 3, 4, 5, 6]
+        return iter([Job()])
