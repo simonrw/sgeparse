@@ -3,6 +3,7 @@ package:
 	python setup.py bdist_wheel
 	
 upload:
+	rm dist/*
 	$(MAKE) package
 	twine upload dist/*
 
