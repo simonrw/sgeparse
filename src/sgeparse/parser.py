@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''
+Code to handle parsing the xml text.
+'''
 
 import xml.etree.ElementTree as ET
 try:
@@ -10,6 +13,10 @@ from datetime import datetime
 
 
 class JobsParser(object):
+    '''
+    Class to take the xml returned by `fetch_xml` and parse out the
+    job information.
+    '''
 
     def __init__(self, data):
         self.data = data
