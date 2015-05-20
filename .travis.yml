@@ -4,7 +4,6 @@ python:
   - "3.3"
   - "3.4"
   - "pypy"
-  - "nightly"
 install:
   - pip install .
 script: py.test testing
