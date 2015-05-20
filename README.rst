@@ -2,6 +2,9 @@
 sgeparse
 ========
 
+.. image:: https://travis-ci.org/mindriot101/sgeparse.svg
+    :target: https://travis-ci.org/mindriot101/sgeparse
+
 Simple python module for parsing the output of SGE qstat. There is only one top level function: ``get_jobs`` which returns a list of dictionaries of currently queued (running or waiting) jobs.
 
 ------------
